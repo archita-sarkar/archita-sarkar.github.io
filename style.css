@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --bg-color: #050505;
     --secondary-bg: #111111;
@@ -85,6 +89,54 @@ nav {
 .nav-links a:hover,
 .nav-links a.active {
     color: var(--text-primary);
+}
+
+.secondary-nav {
+    position: sticky;
+    top: 70px;
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem 10%;
+    margin: -5rem auto 2rem;
+    z-index: 900;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.secondary-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.secondary-nav a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+}
+
+.secondary-nav a:hover {
+    color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    .secondary-nav {
+        top: 100px;
+        /* Adjusted for taller mobile nav */
+        padding: 0.8rem 5%;
+        gap: 1rem;
+    }
+
+    .secondary-nav a {
+        font-size: 0.7rem;
+    }
 }
 
 /* Sections */
