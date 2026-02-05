@@ -359,6 +359,23 @@ section {
     line-height: 1.6;
 }
 
+.subsection-title {
+    font-size: 1.6rem;
+    margin: 4rem 0 1.5rem;
+    color: var(--text-primary);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.subsection-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border-color);
+}
+
 /* Footer */
 footer {
     padding: 4rem 10%;
