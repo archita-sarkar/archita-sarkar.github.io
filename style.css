@@ -330,10 +330,33 @@ section {
 
 .category-title {
     font-size: 2rem;
-    margin: 4rem 0 1.5rem;
+    margin: 4rem 0 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--accent-color);
     display: inline-block;
+}
+
+.role-box {
+    background: rgba(255, 62, 131, 0.03);
+    border-left: 4px solid var(--accent-color);
+    padding: 1.5rem;
+    border-radius: 0 12px 12px 0;
+    margin-bottom: 2rem;
+    max-width: 900px;
+}
+
+.role-box h4 {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.role-box p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Footer */
